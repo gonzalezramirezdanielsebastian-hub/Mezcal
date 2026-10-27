@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feria Del Mezcal San Diego La Mesa Tochimiltzingo</title>
+  
+  <!-- Tailwind CSS CDN para estilos rápidos y responsivos -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-stone-900 text-stone-100 min-h-screen flex flex-col font-sans">
+
+  <!-- ENCABEZADO / HERO -->
+  <header class="bg-gradient-to-r from-stone-950 via-stone-900 to-amber-950 border-b border-amber-800/40 py-12 px-4 text-center">
+    <div class="max-w-6xl mx-auto">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-amber-500 tracking-wide uppercase">
+        Feria del Mezcal
+      </h1>
+      <p class="text-amber-200/80 mt-3 text-lg md:text-xl font-light">
+        Conoce a los maestros mezcaleros y expositores de nuestro municipio
+      </p>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="max-w-7xl mx-auto px-4 py-10 flex-grow w-full">
+    <div class="mb-8 text-center">
+      <h2 class="text-2xl font-bold text-stone-200">Expositores y Marcas Participantes</h2>
+      <p class="text-stone-400 text-sm mt-1">Haz clic en cualquier tarjeta para ver la descripción completa</p>
+    </div>
+
+    <!-- GRID DE TARJETAS (4 Columnas en pantallas grandes lg:grid-cols-4) -->
+    <div id="mezcales-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Las tarjetas se cargarán dinámicamente desde el archivo .json -->
+    </div>
+  </main>
+
+  <!-- MODAL / VENTANA EMERGENTE PARA DETALLES -->
+  <div id="modal-detalle" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-stone-800 border border-amber-600/40 rounded-xl max-w-lg w-full overflow-hidden shadow-2xl relative transform transition-all">
+      <!-- Botón Cerrar -->
+      <button id="btn-cerrar-modal" class="absolute top-3 right-3 text-stone-400 hover:text-white bg-stone-900/80 rounded-full w-8 h-8 flex items-center justify-center z-10">
+        ✕
+      </button>
+
+      <!-- Imagen en el Modal -->
+      <div class="h-64 w-full bg-stone-950 relative overflow-hidden">
+        <img id="modal-img" src="" alt="" class="w-full h-full object-cover">
+      </div>
+
+      <!-- Información del Modal -->
+      <div class="p-6">
+        <span id="modal-agave" class="inline-block px-3 py-1 bg-amber-900/60 text-amber-300 text-xs font-semibold rounded-full border border-amber-600/30 uppercase tracking-wider mb-2">
+          Agave
+        </span>
+        <h3 id="modal-titulo" class="text-2xl font-bold text-amber-400"></h3>
+        <p id="modal-destileria" class="text-stone-400 text-sm mb-4 font-medium"></p>
+        
+        <div class="border-t border-stone-700/60 pt-4 mt-2">
+          <h4 class="text-xs uppercase tracking-widest text-stone-400 mb-1 font-semibold">Descripción / Historia:</h4>
+          <p id="modal-descripcion" class="text-stone-300 leading-relaxed text-sm whitespace-pre-line"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="bg-stone-950 border-t border-stone-800 text-center py-6 text-stone-500 text-sm">
+    <p>Apoya a pequeños productores</p>
+  </footer>
+
+  <!-- ARCHIVO JAVASCRIPT -->
+  <script src="app.js"></script>
+</body>
+</html>

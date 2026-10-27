@@ -1,0 +1,24 @@
+/* Transiciones suavizadas para las tarjetas y modales */
+.card-mezcal {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-mezcal:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px -10px rgba(217, 119, 6, 0.3);
+}
+
+/* Scrollbar personalizado oscuro para la página */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1c1917;
+}
+::-webkit-scrollbar-thumb {
+  background: #44403c;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d97706;
+}
