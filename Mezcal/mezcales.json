@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "nombre": "Mezcal El Palenque",
+    "tipoAgave": "Espadín",
+    "imagen": "imagenes/palenque.jpg",
+    "descripcion": "Elaborado tradicionalmente en horno de piedra con leña de encino. Presenta notas ahumadas con un toque dulce al final del paladar.",
+    "destileria": "Rancho San Antonio"
+  },
+  {
+    "id": 2,
+    "nombre": "Nube de Agave",
+    "tipoAgave": "Tobalá",
+    "imagen": "imagenes/nube.jpg",
+    "descripcion": "Proveniente de plantas silvestres cosechadas a más de 2,000 metros sobre el nivel del mar. Sabor herbal, complejo y altamente aromático.",
+    "destileria": "La Sierra Sol"
+  },
+  {
+    "id": 3,
+    "nombre": "Sangre del Sol",
+    "tipoAgave": "Arroqueño",
+    "imagen": "imagenes/sangre.jpg",
+    "descripcion": "Mezcal de maduración lenta (12 a 14 años). Destilado en ollas de barro, ofreciendo notas terrosas y un cuerpo robusto.",
+    "destileria": "Don Herminio"
+  },
+  {
+    "id": 4,
+    "nombre": "Gota de Leyenda",
+    "tipoAgave": "Cuishe",
+    "imagen": "imagenes/gota.jpg",
+    "descripcion": "Agave silvestre de tallo alto. Un mezcal seco, balanceado, con matices minerales e intensas notas a agave cocido.",
+    "destileria": "Maestros Mezcaleros"
+  }
+]
